@@ -1,6 +1,7 @@
 # OOP Webshop in Node.JS
 ![](https://img.shields.io/badge/Company-Becode-blue)
 ![](https://img.shields.io/badge/Front.end-Done-green)
+![](https://img.shields.io/badge/Factoring.template-Done-green)
 ![](https://img.shields.io/badge/Node.JS-WIP-yellow)
 ![](https://img.shields.io/badge/Project-Analysing-yellow)
 ![](https://img.shields.io/badge/MVC-Queued-red)
@@ -32,7 +33,9 @@
 
 ## Installation
 
-N/A
+Install Node.JS
+Update and download the dependencies with ```npm install```
+Then run ```nodemon app```
 
 ## Usage
 
@@ -44,12 +47,9 @@ To do
 
 ### Features
 
-To do
++Factorised code
 
 ## Code
-
-To do
-[![Build Status](https://qa.nuxeo.org/jenkins/buildStatus/icon?job=/nuxeo/addons_nuxeo-sample-project-master)](https://qa.nuxeo.org/jenkins/job/nuxeo/job/addons_nuxeo-sample-project-master/)
 
 ### Content
 
@@ -57,10 +57,10 @@ The challenge is to take-in a template Front-end made with Bootstrap and add the
 
 ### Requirements
 
-To do
-See [CORG/Compiling Nuxeo from sources](http://doc.nuxeo.com/x/xION)
-
-Sample: <https://github.com/nuxeo/nuxeo/blob/master/nuxeo-distribution/README.md>
+Lodash
+Express
+EJS
+Morgan
 
 ### Limitations
 
@@ -80,16 +80,12 @@ To do
 
 ## Contributing / Reporting issues
 
-Todo
-Link to JIRA component (or project if there is no component for that project). Samples:
-
-* [Link to component](https://jira.nuxeo.com/issues/?jql=project%20%3D%20NXP%20AND%20component%20%3D%20Elasticsearch%20AND%20Status%20!%3D%20%22Resolved%22%20ORDER%20BY%20updated%20DESC%2C%20priority%20DESC%2C%20created%20ASC)
-* [Link to project](https://jira.nuxeo.com/secure/CreateIssue!default.jspa?project=NXP)
+None for now
 
 ## License
 
 To do
-[Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html)
+
 
 ## About Becode
 
