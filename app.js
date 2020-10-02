@@ -1,38 +1,35 @@
 //require
 const express = require('express');
 const morgan = require('morgan');
+const mongoose = require('mongoose');
+const indexRoutes = require('./routes/indexRoutes');
 
 //MongoDB
 const MongoClient = require('mongodb').MongoClient;
-//! insert line with db access here
-const client = new MongoClient(uri, { useNewUrlParser: true });
-client.connect(err => {
-  const collection = client.db("dbtest").collection("users");
-  // perform actions on the collection object
-  client.close();
-});
+
+
 
 //express app
 const app = express();
 
+//Connect to MongoDB
+//! delete line with db before push
+const dbURI = "mongodb+srv://MeunierS:babouska@clusterfreshshop.smrlx.mongodb.net/dbtest?retryWrites=true&w=majority";
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true})
+    .then((result) => app.listen(3000))
+    .catch((err) => console.log(err))
+
 //register view engines
 app.set('view engine', 'ejs');
 
-//listen for requests
-app.listen(3000);
-
 //middleware & static files
 app.use(express.static('public'));
-app.use(morgan('dev'));
+app.use(express.urlencoded({ extended: true}));
+app.use(morgan('tiny'));
 
 //link to pages
-app.get('/', (req, res) => {
-    res.render('index');
-});
-app.get('/index', (req, res) => {
+app.use(indexRoutes);
 
-    res.render('index');
-});
 app.get('/about', (req, res) => {
 
     res.render('about');
