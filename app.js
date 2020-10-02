@@ -14,7 +14,7 @@ const app = express();
 
 //Connect to MongoDB
 //! delete line with db before push
-const dbURI = "mongodb+srv://MeunierS:babouska@clusterfreshshop.smrlx.mongodb.net/dbtest?retryWrites=true&w=majority";
+const dbURI = 
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true})
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err))
