@@ -3,7 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const indexRoutes = require('./routes/indexRoutes');
-
+const authRoutes = require('./routes/authRoutes');
 //MongoDB
 const MongoClient = require('mongodb').MongoClient;
 
@@ -14,7 +14,7 @@ const app = express();
 
 //Connect to MongoDB
 //! delete line with db before push
-const dbURI = "mongodb+srv://MeunierS:babouska@clusterfreshshop.smrlx.mongodb.net/dbtest?retryWrites=true&w=majority";
+
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true})
     .then((result) => app.listen(3000))
     .catch((err) => console.log(err))
@@ -25,10 +25,12 @@ app.set('view engine', 'ejs');
 //middleware & static files
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true}));
-app.use(morgan('tiny'));
+app.use(express.json());
+app.use(morgan('dev'));
 
-//link to pages
+//routes to pages
 app.use(indexRoutes);
+app.use(authRoutes);
 
 app.get('/about', (req, res) => {
 

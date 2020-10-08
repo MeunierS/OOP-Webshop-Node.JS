@@ -2,14 +2,16 @@
 ![](https://img.shields.io/badge/Company-Becode-blue)
 ![](https://img.shields.io/badge/Front.end-Done-green)
 ![](https://img.shields.io/badge/Factoring.template-Done-green)
+![](https://img.shields.io/badge/MVC-WIP-yellow)
 ![](https://img.shields.io/badge/Node.JS-WIP-yellow)
-![](https://img.shields.io/badge/Project-Analysing-yellow)
-![](https://img.shields.io/badge/MVC-Queued-red)
+![](https://img.shields.io/badge/Analasis-Done-green)
+![](https://img.shields.io/badge/JWT-Queued-orange)
+
 
 ## About / Synopsis
 
 * This is a consolidation challenge for Becode to learn OOP with Node.JS, the front-end is sent, you have to do the rest.
-* Project status: analysis phase
+* Project status: Coding back-end
 
 ## Table of contents
 
@@ -35,7 +37,7 @@
 
 Install Node.JS
 Update and download the dependencies with ```npm install```
-Then run ```nodemon app```
+Then run ```nodemon app``` or ```node app``` if you don't run nodemon
 
 ## Usage
 
@@ -48,6 +50,7 @@ To do
 ### Features
 
 +Factorised code
++MVC Structure
 
 ## Code
 
