@@ -64,6 +64,7 @@ Lodash
 Express
 EJS
 Morgan
+Validator
 
 ### Limitations
 
