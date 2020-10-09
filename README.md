@@ -2,10 +2,19 @@
 ![](https://img.shields.io/badge/Company-Becode-blue)
 ![](https://img.shields.io/badge/Front.end-Done-green)
 ![](https://img.shields.io/badge/Factoring.template-Done-green)
-![](https://img.shields.io/badge/MVC-WIP-yellow)
+![](https://img.shields.io/badge/MVC-Done-green)
 ![](https://img.shields.io/badge/Node.JS-WIP-yellow)
 ![](https://img.shields.io/badge/Analasis-Done-green)
-![](https://img.shields.io/badge/JWT-Queued-orange)
+![](https://img.shields.io/badge/JWT-Done-green)
+![](https://img.shields.io/badge/Auth-Done-green)
+![](https://img.shields.io/badge/Newsletter-Done-green)
+![](https://img.shields.io/badge/Client.account-TODO-red)
+![](https://img.shields.io/badge/Research.bar-TODO-red)
+![](https://img.shields.io/badge/Shopping.cart-TODO-red)
+![](https://img.shields.io/badge/Dynamic.img-TODO-red)
+![](https://img.shields.io/badge/Sidebar.filter-TODO-red)
+![](https://img.shields.io/badge/Wishlist-TODO-red)
+![](https://img.shields.io/badge/Contact.us-TODO-red)
 
 
 ## About / Synopsis
@@ -37,7 +46,7 @@
 
 Install Node.JS
 Update and download the dependencies with ```npm install```
-Then run ```nodemon app``` or ```node app``` if you don't run nodemon
+Then run ```nodemon app``` or ```node app``` if you don't use nodemon
 
 ## Usage
 
@@ -49,8 +58,12 @@ To do
 
 ### Features
 
-+Factorised code
-+MVC Structure
++ Factorised code
++ MVC Structure
++ Authentification system (register, log in, log out, jwt cookie)
++ Protected routes
++ Conditionnal rendering
++ Newsletter inscription list
 
 ## Code
 
@@ -60,11 +73,7 @@ The challenge is to take-in a template Front-end made with Bootstrap and add the
 
 ### Requirements
 
-Lodash
-Express
-EJS
-Morgan
-Validator
+Node.JS for dependencies check package.json
 
 ### Limitations
 
